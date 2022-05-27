@@ -1,0 +1,40 @@
+.bxs-notepad:before {
+    font-size: 30px;
+    padding-right: 0.5rem !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+button[aria-expanded="false"]>.close {
+    display: none;
+}
+
+button[aria-expanded="true"]>.open {
+    display: none;
+}
+
+.navbar-toggler {
+    border: none !important;
+    font-size: 30px !important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+input,
+textarea,
+.btn {
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000 !important;
+}

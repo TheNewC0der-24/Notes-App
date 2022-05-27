@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="notes app, notes application, notes taker">
+    <meta name="description"
+        content="The simplest way to keep notes. Light, clean, and free. Notes APP is now available for iOS, Android, Mac, and the web.">
+    <title>Notes App</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- BoxIcon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="text-light">
+                <i class='bx bxs-notepad'></i>
+            </a>
+            <a class="navbar-brand d-flex justify-content-start me-auto" href="#">Notes App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <i class="bx bx-menu open fw-bold text-light"></i>
+                <i class="bx bx-x close fw-bold text-light"></i>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                <form class="d-flex" role="search">
+                    <input id="searchTxt" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="container my-3">
+        <h1>Welcome to Notes APP 📝</h1>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <h5 class="card-title">Add title</h5>
+                    <input type="text" class="form-control" id="addTitle" aria-describedby="title"
+                        placeholder="Enter title">
+                </div>
+                <h5 class="card-title mt-4">Add a Note</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary mt-4" id="addBtn">Add Note</button>
+            </div>
+        </div>
+
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <div id="notes" class="row container"></div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
